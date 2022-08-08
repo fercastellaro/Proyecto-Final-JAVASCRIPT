@@ -101,10 +101,27 @@ function agregarTurn(){
 //------ Borrar turno ------
 function borrarTurn(e){
     e.preventDefault()
-
-    const id = e.target.parentElement.dataset.TurnId
-    turnos = turnos.filter(Turn => Turn.id != id)
-    render()
+    Swal.fire({
+        title: 'Seguro que queres cancelar tu turno?',
+        text: "De hacerlo, el turno sera asignado a otra persona.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#46cc8d',
+        cancelButtonColor: '#1f4037',
+        confirmButtonText: 'Si, deseo cancelarlo.',
+        cancelButtonText: 'No quiero cancelarlo.'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Cancelado',
+            'Tu turno sera reasignado.',
+            'success'
+          )
+            const id = e.target.parentElement.dataset.TurnId
+            turnos = turnos.filter(Turn => Turn.id != id)
+            render()  
+        }
+      })
 }
 
 
