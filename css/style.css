@@ -1,0 +1,360 @@
+:root {
+    --colorTextos: rgb(96, 91, 97);
+    --colorTextos2:#99f2c8;
+    --colorTextos3:#1f4037;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037); 
+    /* display:grid; */
+    height: 100vh;
+    justify-content: space-between;
+
+}
+
+.contenedor {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* ---------- Navbar ---------- */
+
+header {
+    height: 100px;
+    position: relative;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.2px 5%;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__links li {
+    
+    display: inline-block;
+}
+
+.nav__links li a{
+    
+    padding: 15px;
+    color: black;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+
+.nav__links li a:hover{
+    color: var(--colorTextos2);
+}
+
+.nav__button{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    border: none;
+    border-radius: 2px;
+    color: aliceblue;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav__button:hover {
+    background-color: var(--colorTextos2);
+}
+/* ---------- INDEX ---------- */
+
+.mastertext {
+    font-size: 80px;
+    color: black;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.subtext {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.container-options {
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    height: 250px;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    transition: all 400ms;
+    position: relative;
+    max-width: 300px;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+}
+/* ---------- Login/Register ---------- */
+
+.forms-tittle{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.form h2 {
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.form h2:hover {
+    color: var(--colorTextos2);
+}
+
+.form {
+    padding: 20px;
+}
+
+.form input {
+    padding: 20px;
+}
+
+form {
+    height: 100%;
+    margin: 50px;
+    background: #fff;
+    padding: 20px 0;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+    border-radius: 10px;
+}
+
+.form {
+    width: 300px;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 25px;
+    padding: 5px;
+}
+
+.input-form {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+
+
+input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:rgb(94,93,93) ;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #99f2c8, #1f4037);   
+    transition: 1s ease width;
+    left: 0;
+}
+
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.form-button{
+    font-family: 'Poppins', sans-serif;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 50px auto 10px;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ---------- Turnos ---------- */
+
+.saludo {
+    margin-left: 40px;
+}
+.selector {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.error {
+    color:var(--colorTextos3) ;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-turnox {
+    background-color: white;
+    height: 100%;
+    margin-top: 51px;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+
+.form-turno h2 {
+    text-align: center;
+}
+
+
+.buttonDelete {
+
+    position: relative;
+    color: white;
+    border: none;
+    background: rgb(224, 69, 108);
+    padding: 0px 10px;
+    border-radius: 5px;
+    left: 20px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.buttonDelete:hover {
+    background: rgb(223, 15, 67);
+
+
+}
+
+/* ---------- Cartilla ---------- */
+
+.formCartilla{
+    background-color: white;
+    margin-top: 51px;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+
+.cartilla {
+    height: 0%;
+    margin-left: 0px;
+
+}
+
+.formCartilla p {
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.formCartilla p:hover{
+    background-color: var(--colorTextos2);
+}
+
+
+.contenedor-cartilla{
+    margin-left: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: left;
+}
+
+.contenedor-cartilla h1{
+    margin-left: 150px;
+    font-size: 40px;
+}
+/* ---------- footer ---------- */
+
+.footer {
+    height: 100px;
+    background-color: aliceblue;
+    background-size: cover; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+}
+
+.footer p {
+    margin-left: 30px;
+}
+
+
+.redes {
+    display: inline-block;
+    padding: 0 25px;
+    transition: all 400ms;
+    position: relative;
+    max-width: 300px;
+}
+
+.redes:hover {
+    transform: scale(1.15);
+}
+
+
+.footer__links{
+    color: black;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+.footer__links:hover {
+    color: var(--colorTextos2);
+}

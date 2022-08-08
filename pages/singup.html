@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>Medicarg</title>
+
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="./clinicas.html">Clinicas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 style="text-align: center; margin-top: 10px">Inicia sesion para poder gestionar tus turnos.</h2>
+    <h3 style="text-align: center; margin-top: 10px">O registrate para tener la mejor cobertura medica.</h3>
+    <section class="contenedor">
+            <form action="" method="POST" id="form-singup">
+                <div class="form">
+                    <h1 class="forms-tittle">Iniciar sesion</h1>
+                    <div class="grupo">
+                        <input class="input-form" type="text" name="" id="email" placeholder="Email"><span class="barra"></span>
+                    </div>
+                    <div class="grupo">
+                        <input class="input-form" type="password" name="" id="password" placeholder="Password"><span class="barra"></span>
+                    </div>
+                    <button  class="form-button" type="submit">Entrar</button>
+                    <p class="error" id="check-singup"></p>
+                </div>
+            </form>
+            <form action="" method="POST" id="form-registro">
+                <div class="form">
+                    <h1 class="forms-tittle">Registrate</h1>
+                    <div class="grupo">
+                        <input class="input-form" type="text" name="" id="nombreR" placeholder="Nombre" ><span class="barra"></span>
+                    </div>
+                    <div class="grupo">
+                        <input class="input-form" type="text" name="" id="emailR" placeholder="Email" ><span class="barra" ></span>
+                    </div>
+                    <div class="grupo">
+                        <input class="input-form" type="password" name="" id="passwordR" placeholder="Password"><span class="barra"></span>
+                    </div>
+                    <button class="form-button" type="submit">Registrarte</button>
+                    <p class="error" id="check-register"></p>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <div>
+                <p>Medicarg Salud <br> Agencia CABA <br> Monaco 1905, C.A.B.A</p>
+                <a  class="footer__links" href="mailto:info@medicarg.com.ar"><p>info@medicarg.com.ar</p></a>
+            </div>
+            <div >
+                <a class="redes" href="https://instagram.com"><img src="../img/instagram.png" width="50px" ></a>
+                <a class="redes" href="https://facebook.com"><img src="../img/facebook.png" width="50px"></a>
+                <a class="redes" href="https://twitter.com"><img src="../img/twitter.png"  width="50px"></a>
+                <a class="redes" href="https://whatsapp.com"><img src="../img/whats.png"  width="50px"></a>
+            </div>
+        </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
