@@ -281,45 +281,6 @@ input:focus~.barra::before{
 
 }
 
-/* ---------- Cartilla ---------- */
-
-.formCartilla{
-    background-color: white;
-    margin-top: 51px;
-    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
-    padding: 25px;
-    border-radius: 10px;
-    
-}
-
-.cartilla {
-    height: 0%;
-    margin-left: 0px;
-
-}
-
-.formCartilla p {
-    margin-bottom: 10px;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.formCartilla p:hover{
-    background-color: var(--colorTextos2);
-}
-
-
-.contenedor-cartilla{
-    margin-left: 150px;
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: left;
-}
-
-.contenedor-cartilla h1{
-    margin-left: 150px;
-    font-size: 40px;
-}
 /* ---------- footer ---------- */
 
 .footer {
@@ -357,4 +318,88 @@ input:focus~.barra::before{
 }
 .footer__links:hover {
     color: var(--colorTextos2);
+}
+
+
+/* ---------- Planes ---------- */
+
+.planes {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    
+}
+
+
+.cards {
+    border: none;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
+}
+
+.cards button {
+    font-family: 'Poppins', sans-serif;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    border: none;
+    display: block;
+    width: 60%;
+    margin: 15px;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cards a {
+    text-decoration: none;
+    color: white;
+}
+
+.cards li {
+    margin: 5px;
+}
+
+.beneficios {
+    list-style-type:disc;
+    margin: 10px;
+}
+
+.tittle-plan {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.form-plan {
+    padding: 20px;
+    text-align:left;
+}
+
+.form-plan a {
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.form-plan a:hover{
+    color: var(--colorTextos2);
+}
+
+.legales {
+    margin: 15px;
+    /* background-color: aliceblue; */
 }

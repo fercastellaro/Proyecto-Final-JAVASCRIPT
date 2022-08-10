@@ -166,15 +166,3 @@ if(singUp != null){
 }
 
 
-
-let cartilla = document.getElementById('cartilla')
-
-
-if(cartilla != null){
-    for(medico of medicos){
-        let itemCartilla = document.createElement('p')
-        itemCartilla.innerHTML = medico.nombre +"-"+medico.especialidad +"-"+ medico.sucursal 
-        cartilla.appendChild(itemCartilla)
-    }
-}
-
