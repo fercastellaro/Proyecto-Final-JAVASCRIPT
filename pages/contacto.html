@@ -8,7 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Medicarg</title>
+    <title>Contacto - Medicarg</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+  emailjs.init('RvvtR-xeZWwlRqyTb')
+    </script>
 </head>
 <body>
     <header>
@@ -17,16 +24,38 @@
             <ul class="nav__links">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./clinicas.html">Clinicas</a></li>
-                <a href="./singup.html"><button class="nav__button">Cerrar sesion</button></a>
+                <li><a href="./clinicas.html">Planes</a></li>
+                <li><a href="./covid.html"><img src="../img/icono-virus.png" width="20px"  alt=""> Covid</a></li>
             </ul>
         </nav>
     </header>
+    <div>
+        <h1 style="font-size: 50px;">Contacto</h1>
+        <h2>Completa el formulario, dejandonos tu consulta y un asesor se comunicara con vos dentro
+            de las proximas 24hrs.
+        </h2>
+    </div>
     <section class="contenedor">
-        <div>
-            <h1>contacto</h1>
-            <h2>(en proceso)</h2>
-        </div>
+
+        
+        <form id="form" class="contacto">
+            <div class="field">
+              <label for="from_name">Nombre</label>
+              <input type="text" name="from_name" id="from_name" class="input-form">
+            </div>
+            <br>
+            <div class="field">
+                <label for="reply_to">tu Email</label>
+                <input type="text" name="reply_to" id="reply_to" class="input-form">
+            </div>
+            <br>
+            <label for="from_message">Dejanos tu comentario</label>
+            <br>
+            <textarea name="message" id="message" cols="42" rows="6" placeholder="Comentario"></textarea>
+            <br>
+            <br>
+            <input type="submit" id="button" value="Enviar comentario" class="estadisticas-button">
+          </form>
     </section>
     <footer class="footer">
         <div>
@@ -40,7 +69,9 @@
             <a class="redes" href="https://whatsapp.com"><img src="../img/whats.png"  width="50px"></a>
         </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/contacto.js"></script>
     
 </body>
 </html>

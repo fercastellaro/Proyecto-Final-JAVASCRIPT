@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-Medicarg</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./clinicas.html">Planes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="info-covid">
+    <h1>Información útil y prevencion del Covid-19.</h1>
+
+    <main id="myPage">
+    <div class="btn-covid">
+        <button class="covid-button" href="cuidados.html" data-page="cuidados">Cuidados principales</button>
+        <button class="covid-button" href="casos.html" data-page="casos">Caso sospechoso, confirmado o 
+            <br>contacto estrecho</button>
+        <button class="covid-button" href="centros.html" data-page="centros">Centros de vacunacion</button>
+    </div> 
+    </main>
+    <br>
+    <br>
+    <div>
+        <h2>Consultá los datos de la pandemia:</h2>
+    </div>
+</section>
+
+<section class="contenedor">
+    <div class="estadisticas" id="estadisticas">
+        <h1>Estadisticas COVID19</h1>
+        <br>
+        <h4>Utiliza nuestro buscador para ver los datos
+            de la pandemia actualizados al dia de hoy.
+        </h4>
+        <br>
+
+        <select name="" id="selectorPaises" class="selector">
+            <option value="0">Seleccione</option>
+        </select>
+        <br>
+        <br>
+        <button id="btnCargar" class="estadisticas-button">Cargar estadisticas</button>
+        <br>
+        <ul id="lista-datos" style="display:none;">
+            <li>Casos nuevos: <span id="nuevos"></span></li>
+            <li>Casos activos: <span id="activos"></span></li>
+            <li>Recuperados: <span id="recuperados"></span></li>
+            <li>Muertes hoy: <span id="muertesNuevas"></span></li>
+            <li>Muertes totales: <span id="muertesTotales"></span></li>
+        </ul>
+        <p id="error-estadistico" class="error-estadistico"></p>
+    </div>
+    
+</section>
+    <footer class="footer">
+        <div>
+            <p>Medicarg Salud <br> Agencia CABA <br> Monaco 1905, C.A.B.A</p>
+            <a  class="footer__links" href="mailto:info@medicarg.com.ar"><p>info@medicarg.com.ar</p></a>
+        </div>
+        <div >
+            <a class="redes" href="https://instagram.com"><img src="/img/instagram.png" width="50px" ></a>
+            <a class="redes" href="https://facebook.com"><img src="/img/facebook.png" width="50px"></a>
+            <a class="redes" href="https://twitter.com"><img src="/img/twitter.png"  width="50px"></a>
+            <a class="redes" href="https://whatsapp.com"><img src="/img/whats.png"  width="50px"></a>
+        </div>
+    </footer>
+    <script src="../js/covid.js"></script>
+</body>
+</html>
