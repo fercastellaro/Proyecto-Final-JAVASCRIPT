@@ -91,8 +91,6 @@ function agregarTurn(){
 
     turnos.push(TurnObj)
 
-    // location.reload()
-
     formularioTurnos.reset()
     document.formularioTurnos.sel2[document.formularioTurnos.sel2.selectedIndex].text = 'Seleccione'
 
