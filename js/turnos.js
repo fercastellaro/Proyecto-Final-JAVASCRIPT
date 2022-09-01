@@ -91,11 +91,34 @@ function agregarTurn(){
 
     turnos.push(TurnObj)
 
-    location.reload()
+    // location.reload()
+
+    formularioTurnos.reset()
+    document.formularioTurnos.sel2[document.formularioTurnos.sel2.selectedIndex].text = 'Seleccione'
 
     render()
 
 }
+
+//------ Horario turno ------
+
+var fechaTurno = new Date();
+var anioTurno = fechaTurno.getFullYear();
+var diaTurno = fechaTurno.getDate();
+var _mes = fechaTurno.getMonth();
+_mes = _mes + 1
+
+if (_mes < 10){
+    var mes = '0' + _mes;
+} else {
+    var mes = _mes.toString;
+}
+
+dia.min = anioTurno+'-'+mes+'-'+diaTurno;
+
+
+
+
 
 
 //------ Borrar turno ------

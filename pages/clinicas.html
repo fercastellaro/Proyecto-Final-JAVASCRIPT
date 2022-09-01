@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="../css/style.css">
     <title>Medicarg</title>
+
+    <!-- Scripts emailJS PLAN A -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('RvvtR-xeZWwlRqyTb')
+    </script>
+    <!-- Scripts emailJS PLAN B -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('63MxaQuNbATVOW5Ac')
+    </script>
+
+    <!-- Scripts emailJS PLAN C -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('63MxaQuNbATVOW5Ac')
+    </script>
 </head>
+
 <body>
     <header>
         <a href="../index.html"><img src="../img/logo.png" alt="logo" width="200"></a>
@@ -19,120 +43,48 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./clinicas.html">Clinicas</a></li>
-                <li><a href="./covid.html"><img src="../img/icono-virus.png" width="20px"  alt=""> Covid</a></li>
+                <li><a href="./covid.html"><img src="../img/icono-virus.png" width="20px" alt=""> Covid</a></li>
             </ul>
         </nav>
     </header>
     <br>
-<section class="info-covid">
-    <h1><b>Cotizá tu plan y evaluá cuál es
-        la mejor opción para cuidar tu salud.</b></h1>
-        <p>En Medicarg tenemos planes pensados para vos, a la medida de tus necesidades.</p> 
-</section>
+    <section class="info-covid">
+        <h1><b>Elegi tu plan y evaluá cuál es
+                la mejor opción para cuidar tu salud.</b></h1>
+        <p>En Medicarg tenemos planes pensados para vos, a la medida de tus necesidades.</p>
+    </section>
     <section class="planes">
 
-        <!-- ---------- PLAN A ---------- -->
-
-        <div class="cards" id="card-plan-a">
-            <p class="tittle-plan"><b>Plan A</b></p>
-            <ul class="beneficios">
-                <li>Emergencias médicas a domicilio 
-                <br>sin coseguro.</li>
-                <li>Internacion en habitacion preferencial.</li>
-                <li>Maximos valores de reintegros.</li>
-                <li>Asistencia al viajero internacional.</li>
-                <li>Cirugia estetica cada 1 año.</li>
-            </ul>
-            <button id="button-plan-a"><a href="#" class="plan-button">Cotizar</a></button>
-        </div>
-        <div id="form-plan-a" style="display:none;">
-            <form action="" class="form-plan" id="form-a">
-                <h2>Datos personales</h2>
-                <label for="">Nombre</label>
-                <input type="text" id="nombreA" class="input-plan">
-                <br>
-                <label for="">Apellido</label>
-                <input type="text" id="apellidoA" class="input-plan">
-                <br>
-                <label for="">Tipo:</label>
-                <select name="" >
-                    <option value="">DNI</option>
-                    <option value="">PASAPORTE</option>
-                </select>
-                <input type="number"  id="dniA" class="input-plan">
-                <br>
-                <br>
-                <h2>Datos de contacto</h2>
-                <label for="">Zona</label>
-                <select name="" id="">
-                    <option value="">Seleccionar</option>
-                    <option value="">CABA</option>
-                    <option value="">OESTE</option>
-                    <option value="">SUR</option>
-                    <option value="">NORTE</option>
-                </select>
-                <br>
-                <label for="">email</label>
-                <input type="email" id="emailA" class="input-plan">
-                <br>
-                <label for="">Celular</label>
-                <input type="number" id="celularA" class="input-plan">
-                <br>
-                <br>
-                <h2>Afiliacion</h2>
-                <label for="">Tipo de afiliacion</label>
-                <select name="" id="">
-                    <option value="">Seleccionar</option>
-                    <option value="">Particular</option>
-                    <option value="">Relacion de dependencia</option>
-                    <option value="">Monotributista</option>
-                    <option value="">Empresa</option>
-                </select>
-                <br>
-                <label for="">Tipo de tramite</label>
-                <select name="" id="">
-                    <option value="">Seleccionar</option>
-                    <option value="">Comercial</option>
-                    <option value="">Administrativo</option>
-                    <option value="">Cambio de plan</option>
-                </select>
-                <br>
-                <button type="submit" class="form-button">Enviar</button>
-                <p class="error" id="checkA"></p>
-                <a href="#" id="back-a">Volver</a>
-            </form>
-        </div>
-
-        <!-- ---------- PLAN B ---------- -->
+        <!-- ---------- PLAN BASICO ---------- -->
 
         <div class="cards" id="card-plan-b">
-            <p class="tittle-plan"><b>Plan B</b></p>
+            <p class="tittle-plan"><b>Plan Basico</b></p>
             <ul class="beneficios">
-                <li>Ortodoncia sin limite de edad.</li>
-                <li>Internacion en habitacion individual.</li>
-                <li>Asistencia al viajero en paises
-                <br>limitrofes.
+                <li>Emergencias las 24 horas.</li>
+                <li>Consultas medicas y odontologia
+                    <br>en general.
                 </li>
-                <li>Psicología y Psicopedagogía</li>
-                <li>Cirugia estetica cada 3 años.</li>
+                <li>Urgencias en paises limitrofes.</li>
+                <li>Cobertura nacional.</li>
+                <li>Descuentos en medicamentos.</li>
             </ul>
-            <button id="button-plan-b"><a href="#" class="plan-button" >Cotizar</a></button>
+            <button id="button-plan-b"><a href="#" class="plan-button">Ver plan</a></button>
         </div>
         <div id="form-plan-b" style="display:none;">
             <form action="" class="form-plan" id="form-b">
                 <h2>Datos personales</h2>
-                <label for="">Nombre</label>
-                <input type="text" id="nombreB" class="input-plan">
+                <label for="to_name">Nombre</label>
+                <input type="text" id="nombreB" name="to_name" class="input-plan">
                 <br>
-                <label for="">Apellido</label>
-                <input type="text" id="apellidoB" class="input-plan">
+                <label for="to_lastname">Apellido</label>
+                <input type="text" id="apellidoB" class="input-plan" name="to_lastname">
                 <br>
                 <label for="">Tipo:</label>
                 <select name="">
                     <option value="">DNI</option>
                     <option value="">PASAPORTE</option>
                 </select>
-                <input type="number"  id="dniB" class="input-plan">
+                <input type="number" id="dniB" class="input-plan">
                 <br>
                 <br>
                 <h2>Datos de contacto</h2>
@@ -145,8 +97,8 @@
                     <option value="">NORTE</option>
                 </select>
                 <br>
-                <label for="">email</label>
-                <input type="email" id="emailB" class="input-plan">
+                <label for="reply_tob">email</label>
+                <input type="email" id="emailB" name="reply_tob" class="input-plan">
                 <br>
                 <label for="">Celular</label>
                 <input type="number" id="celularB" class="input-plan">
@@ -162,6 +114,7 @@
                     <option value="">Empresa</option>
                 </select>
                 <br>
+                <br>
                 <label for="">Tipo de tramite</label>
                 <select name="" id="">
                     <option value="">Seleccionar</option>
@@ -170,42 +123,41 @@
                     <option value="">Cambio de plan</option>
                 </select>
                 <br>
-                <button type="submit" class="form-button">Enviar</button>
+                <input type="submit" id="buttonB" value="Solicitar informacion" class="form-button">
                 <p class="error" id="checkB"></p>
                 <a href="#" id="back-b">Volver</a>
             </form>
         </div>
 
-        <!-- ---------- PLAN C ---------- -->
+        <!-- ---------- PLAN COMPLETO ---------- -->
 
         <div class="cards" id="card-plan-c">
-            <p class="tittle-plan"><b>Plan C</b></p>
+            <p class="tittle-plan"><b>Plan Completo</b></p>
             <ul class="beneficios">
-                <li>Emergencias las 24 horas.</li>
-                <li>Consultas medicas y odontologia
-                <br>en general.
-                </li>
-                <li>Urgencias en paises limitrofes.</li>
-                <li>Cobertura nacional.</li>
-                <li>Descuentos en medicamentos.</li>
+                <li>Ortodoncia sin limite de edad.</li>
+                <li>Internacion en habitacion preferencial.</li>
+                <li>Asistencia internacional al viajero.</li>
+                <li>Psicología y Psicopedagogía</li>
+                <li>Una cirugia estetica por año.</li>
+                <li>Cobertura total de medicamentos.</li>
             </ul>
-            <button id="button-plan-c"><a href="#" class="plan-button" >Cotizar</a></button>
+            <button id="button-plan-c"><a href="#" class="plan-button">Ver plan</a></button>
         </div>
         <div id="form-plan-c" style="display:none;">
             <form action="" class="form-plan" id="form-c">
                 <h2>Datos personales</h2>
-                <label for="">Nombre</label>
-                <input type="text" id="nombreC" class="input-plan">
+                <label for="to_name">Nombre</label>
+                <input type="text" id="nombreC" name="to_name" class="input-plan">
                 <br>
-                <label for="">Apellido</label>
-                <input type="text" id="apellidoC" class="input-plan">
+                <label for="to_lastname">Apellido</label>
+                <input type="text" id="apellidoC" name="to_lastname" class="input-plan">
                 <br>
                 <label for="">Tipo:</label>
                 <select name="">
                     <option value="">DNI</option>
                     <option value="">PASAPORTE</option>
                 </select>
-                <input type="number"  id="dniC" class="input-plan">
+                <input type="number" id="dniC" class="input-plan">
                 <br>
                 <br>
                 <h2>Datos de contacto</h2>
@@ -218,8 +170,8 @@
                     <option value="">NORTE</option>
                 </select>
                 <br>
-                <label for="">email</label>
-                <input type="email" id="emailC" class="input-plan">
+                <label for="reply_toc">email</label>
+                <input type="email" id="emailC" name="reply_toc" class="input-plan">
                 <br>
                 <label for="">Celular</label>
                 <input type="number" id="celularC" class="input-plan">
@@ -235,6 +187,7 @@
                     <option value="">Empresa</option>
                 </select>
                 <br>
+                <br>
                 <label for="">Tipo de tramite</label>
                 <select name="" id="">
                     <option value="">Seleccionar</option>
@@ -243,44 +196,48 @@
                     <option value="">Cambio de plan</option>
                 </select>
                 <br>
-                <button type="submit" class="form-button">Enviar</button>
+                <input type="submit" id="buttonC" value="Solicitar informacion" class="form-button">
                 <p class="error" id="checkC"></p>
                 <a href="#" id="back-c">Volver</a>
             </form>
         </div>
     </section>
+
     <div class="legales">
         <p>
-            Los datos que ingreses para cotizar un plan médico y/o para solicitar tu afiliación serán almacenados 
-            en la base de datos de Medicarg Salud S.A. (sita en la calle Monaco 1905, Ciudad de Buenos Aires) y 
-            resguardados según sus políticas de seguridad. Existen campos optativos y obligatorios, en caso de 
-            omisión y/o inexactitud de alguno de los datos obligatorios, no podremos realizar la cotización 
-            solicitada. La cotización de un plan médico y/o la solicitud de afiliación importará autorizar a 
-            Medicarg Salud S.A. y a sus sociedades controlantes, controladas y/o de control común y/o vinculadas a 
-            utilizar los datos no sensibles en campañas de promoción de sus productos o servicios. 
-            Por último, te informamos que tenés la posibilidad de ejercer los derechos de acceso, rectificación y 
-            supresión de los datos (artículos 6, 14, 16, 17 y concordantes, Ley 25.326). 
-            LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326, 
-            tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados 
-            en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales. 
-            Una vez perfeccionado el contrato de acuerdo a lo estipulado precedentemente, el contratante podrá, 
-            en el término de DIEZ (10) días, revocar el presente conforme a lo dispuesto en el artículo 34 de la 
+            Los datos que ingreses para ver un plan médico y/o para solicitar tu afiliación serán almacenados
+            en la base de datos de Medicarg Salud S.A. (sita en la calle Monaco 1905, Ciudad de Buenos Aires) y
+            resguardados según sus políticas de seguridad. Existen campos optativos y obligatorios, en caso de
+            omisión y/o inexactitud de alguno de los datos obligatorios, no podremos realizar la cotización
+            solicitada. La cotización de un plan médico y/o la solicitud de afiliación importará autorizar a
+            Medicarg Salud S.A. y a sus sociedades controlantes, controladas y/o de control común y/o vinculadas a
+            utilizar los datos no sensibles en campañas de promoción de sus productos o servicios.
+            Por último, te informamos que tenés la posibilidad de ejercer los derechos de acceso, rectificación y
+            supresión de los datos (artículos 6, 14, 16, 17 y concordantes, Ley 25.326).
+            LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326,
+            tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados
+            en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.
+            Una vez perfeccionado el contrato de acuerdo a lo estipulado precedentemente, el contratante podrá,
+            en el término de DIEZ (10) días, revocar el presente conforme a lo dispuesto en el artículo 34 de la
             Ley Nº 24.240.
         </p>
     </div>
     <footer class="footer">
         <div>
-            <p>Medicarg Salud <br> Agencia CABA <br> Monaco 1905, C.A.B.A</p>
-            <a  class="footer__links" href="mailto:info@medicarg.com.ar"><p>info@medicarg.com.ar</p></a>
+            <p>Medicarg Salud <br> Agencia CABA <br> Monaco 1905, Monserrat</p>
+            <a class="footer__links" href="mailto:info@medicarg.com.ar">
+                <p>info@medicarg.com.ar</p>
+            </a>
         </div>
-        <div >
-            <a class="redes" href="https://instagram.com"><img src="/img/instagram.png" width="50px" ></a>
+        <div>
+            <a class="redes" href="https://instagram.com"><img src="/img/instagram.png" width="50px"></a>
             <a class="redes" href="https://facebook.com"><img src="/img/facebook.png" width="50px"></a>
-            <a class="redes" href="https://twitter.com"><img src="/img/twitter.png"  width="50px"></a>
-            <a class="redes" href="https://whatsapp.com"><img src="/img/whats.png"  width="50px"></a>
+            <a class="redes" href="https://twitter.com"><img src="/img/twitter.png" width="50px"></a>
+            <a class="redes" href="https://whatsapp.com"><img src="/img/whats.png" width="50px"></a>
         </div>
     </footer>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../js/planes.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/planes.js"></script>
 </body>
+
 </html>

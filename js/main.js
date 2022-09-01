@@ -133,6 +133,7 @@ if(register != null){
             error+= `El password no es válido.<br>`
             entrar = true
         }if(entrar){
+            checkRegister.style.color = 'red'
             checkRegister.innerHTML = error
         }else{
             checkRegister.innerHTML = `¡Ya sos parte!<br> Ahora inicia sesion`
@@ -159,6 +160,7 @@ if(singUp != null){
                 window.location="turnos.html"
 
             }else{
+                checkSingUp.style.color = 'red'
                 checkSingUp.innerHTML = `email/password incorrectos`
                 singUp.reset()
             }
