@@ -1,6 +1,6 @@
 :root {
     --colorTextos: rgb(96, 91, 97);
-    --colorTextos2:#99f2c8;
+    --colorTextos2:#4286f4;
     --colorTextos3:#1f4037;
 }
 
@@ -17,13 +17,46 @@ html {
 }
 
 body {
-    background: #1f4037;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037); 
-    /* display:grid; */
     height: 100vh;
     justify-content: space-between;
 
+}
+
+
+#index{
+    background-image: url('../img/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacto{
+    background-image: url('../img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#planes{
+    background-image: url('../img/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#covid{
+    background-image: url('../img/fondo4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#turnos{
+    background-image: url('../img/fondo5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#singup{
+    background-image: url('../img/fondo5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contenedor {
@@ -79,8 +112,9 @@ header {
 .nav__button{
     font-family: 'Poppins', sans-serif;
     margin-left: 50px;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037);
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border: none;
     border-radius: 2px;
     color: aliceblue;
@@ -211,7 +245,7 @@ input::placeholder{
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #99f2c8, #1f4037);   
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: 1s ease width;
     left: 0;
 }
@@ -223,9 +257,9 @@ input:focus~.barra::before{
 
 .form-button{
     font-family: 'Poppins', sans-serif;
-    background: #1f4037;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037);
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border: none;
     display: block;
     width: 80%;
@@ -335,10 +369,6 @@ input:focus~.barra::before{
     justify-content: center;
     align-items: center;
     height: 200px;
-    background: #1f4037;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037);
-    
 }
 
 
@@ -357,9 +387,9 @@ input:focus~.barra::before{
 
 .cards button {
     font-family: 'Poppins', sans-serif;
-    background: #1f4037;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037);
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border: none;
     display: block;
     width: 60%;
@@ -436,9 +466,9 @@ input:focus~.barra::before{
 
 .estadisticas-button{
     font-family: 'Poppins', sans-serif;
-    background: #1f4037;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037);
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     border: none;
     display: block;
     width: 80%;
