@@ -129,8 +129,8 @@ function borrarTurn(e){
         text: "De hacerlo, el turno sera asignado a otra persona.",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#46cc8d',
-        cancelButtonColor: '#1f4037',
+        confirmButtonColor: '#4286f4',
+        cancelButtonColor: '#373B44',
         confirmButtonText: 'Si, deseo cancelarlo.',
         cancelButtonText: 'No quiero cancelarlo.'
       }).then((result) => {

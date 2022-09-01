@@ -48,6 +48,7 @@ form.addEventListener('submit', function(event) {
          'success'
        )
        form.reset()
+       check.innerHTML = ''
      }, (err) => {
        btn.value = 'Enviar comentario';
        alert(JSON.stringify(err));

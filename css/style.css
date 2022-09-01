@@ -1,7 +1,7 @@
 :root {
     --colorTextos: rgb(96, 91, 97);
     --colorTextos2:#4286f4;
-    --colorTextos3:#1f4037;
+    --colorTextos3:#373B44;
 }
 
 html {
@@ -48,13 +48,13 @@ body {
 }
 
 #turnos{
-    background-image: url('../img/fondo5.jpg');
+    background-image: url('../img/fondo6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #singup{
-    background-image: url('../img/fondo5.jpg');
+    background-image: url('../img/fondo6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -264,7 +264,7 @@ input:focus~.barra::before{
     display: block;
     width: 80%;
     margin: 50px auto 10px;
-    color: white;
+    color: aliceblue;
     height: 40px;
     font-size: 16px;
     cursor: pointer;
@@ -287,7 +287,7 @@ input:focus~.barra::before{
 }
 
 .form-turnox {
-    background-color: white;
+    background-color: aliceblue;
     height: 100%;
     margin-top: 51px;
     box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
@@ -304,7 +304,7 @@ input:focus~.barra::before{
 .buttonDelete {
 
     position: relative;
-    color: white;
+    color: aliceblue;
     border: none;
     background: rgb(224, 69, 108);
     padding: 0px 10px;
@@ -381,7 +381,7 @@ input:focus~.barra::before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: aliceblue;
     box-shadow:0 0 6px 0 rgba(255, 255, 255, 0.8) ;
 }
 
@@ -394,7 +394,7 @@ input:focus~.barra::before{
     display: block;
     width: 60%;
     margin: 15px;
-    color: white;
+    color: aliceblue;
     height: 40px;
     font-size: 16px;
     cursor: pointer;
@@ -402,7 +402,7 @@ input:focus~.barra::before{
 
 .cards a {
     text-decoration: none;
-    color: white;
+    color: aliceblue;
 }
 
 .cards li {
@@ -452,12 +452,12 @@ input:focus~.barra::before{
     border: none;
     padding: 25px 40px;
     border-radius: 25px;
-    background-color: white;
+    background-color: aliceblue;
     color: #002;
     width: 400px;
     height: 380px;
     margin: 50px auto;
-    box-shadow: 0 0 6px 0 white;
+    box-shadow: 0 0 6px 0 aliceblue;
 }
 
 .estadisticas li {
@@ -473,7 +473,7 @@ input:focus~.barra::before{
     display: block;
     width: 80%;
     margin: auto;
-    color: white;
+    color: aliceblue;
     height: 40px;
     font-size: 16px;
     cursor: pointer;
@@ -493,12 +493,12 @@ input:focus~.barra::before{
 
 .covid-button {
     border: none;
-    background-color: white;
+    background-color: aliceblue;
     border-radius: 15px;
     margin: 20px;
     padding: 25px;;
     font-size: 30px;
-    box-shadow: 0 0 6px 0 white;
+    box-shadow: 0 0 6px 0 aliceblue;
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -529,9 +529,9 @@ input:focus~.barra::before{
 }
 
 .btn-volver {
-    background-color: white;
+    background-color: aliceblue;
     padding: 10px 20px;
-    box-shadow: 0 0 6px 0 white;
+    box-shadow: 0 0 6px 0 aliceblue;
     font-family: 'Poppins', sans-serif;
     border: none;
     border-radius: 5px;
@@ -546,17 +546,20 @@ input:focus~.barra::before{
 }
 /* ---------- CONTACTO ---------- */
 
+.form{
+    background-color: aliceblue;
+}
 
 .contacto {
     border: none;
     padding: 25px 40px;
     border-radius: 25px;
-    background-color: white;
+    background-color: aliceblue;
     color: #002;
     width: 400px;
     height: 500px;
     margin: 50px auto;
-    box-shadow: 0 0 6px 0 white;
+    box-shadow: 0 0 6px 0 aliceblue;
 }
 
 .contacto textarea{
